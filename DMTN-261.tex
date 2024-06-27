@@ -1,21 +1,14 @@
-\documentclass[DM,authoryear,toc]{lsstdoc}
+\documentclass[DM,authoryear]{lsstdoc}
 \input{meta}
 
 % Package imports go here.
 
 % Local commands go here.
 
-%If you want glossaries
-%\input{aglossary.tex}
-%\makeglossaries
+\title{Memo on the use of the ANTARES Broker to provide the Rubin/LSST Alert Filtering Service}
 
-\title{Memo on the use  of the ANTARES Broker to provide the Rubin/LSST Alert Filtering Service}
-
-% Optional subtitle
-% \setDocSubtitle{A subtitle}
-
-\author{%
-Leanne Guy
+% Memo on the provision of the Rubin/LSST Alert Filtering System by ANTARES
+\author{Leanne Guy, Eric Bellm
 }
 
 \setDocRef{DMTN-261}
@@ -23,32 +16,18 @@ Leanne Guy
 
 \date{\vcsDate}
 
-% Optional: name of the document's curator
-% \setDocCurator{The Curator of this Document}
-
-\setDocAbstract{%
-This memo describes the agreement between Rubin/LSST and NOIRLab for the ANTARES broker to provide the LSST Alert Filtering Service.
-}
-
-% Change history defined here.
-% Order: oldest first.
-% Fields: VERSION, DATE, DESCRIPTION, OWNER NAME.
-% See LPM-51 for version number policy.
-\setDocChangeRecord{%
-  \addtohist{1}{YYYY-MM-DD}{Unreleased.}{Leanne Guy}
-}
-
-
 \begin{document}
 
-% Create the title page.
-\maketitle
-% Frequently for a technote we do not want a title page  uncomment this to remove the title page and changelog.
-% use \mkshorttitle to remove the extra pages
+\setMemoto{S. Person}
+        
+\mkmemotitle
 
-% ADD CONTENT HERE
-% You can also use the \input command to include several content files.
+This memo describes the agreement between Rubin/LSST and NOIRLab for the ANTARES broker to provide the LSST Alert Filtering Service.
 
+Technote \citeds{dmtn-226} proposes a partnership with the ANTARES alert broker \citep{2021AJ....161..107M}, one of the seven approved full-stream brokers to provide the Rubin AFS.
+Like the Rubin Operations project, ANTARES operates as part of NOIRLab.
+
+\clearpage
 \appendix
 % Include all the relevant bib files.
 % https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
@@ -61,8 +40,6 @@ This memo describes the agreement between Rubin/LSST and NOIRLab for the ANTARES
 \input{acronyms.tex}
 % If you want glossary uncomment below -- comment out the two lines above
 %\printglossaries
-
-
 
 
 
