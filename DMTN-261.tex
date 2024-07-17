@@ -5,27 +5,40 @@
 
 % Local commands go here.
 
-\title{Memo on the use of the ANTARES Broker to provide the Rubin/LSST Alert Filtering Service}
+\title{On the use of the CSDC ANTARES Broker for the Rubin/LSST Alert Filtering Service.}
 
 % Memo on the provision of the Rubin/LSST Alert Filtering System by ANTARES
-\author{Leanne Guy, Eric Bellm
-}
+\author{V. Krabbendam, T. Matheson, R. Blum}
 
 \setDocRef{DMTN-261}
 \setDocUpstreamLocation{\url{https://github.com/lsst-dm/dmtn-261}}
 
-\date{\vcsDate}
+\date{2024-06-21}
 
 \begin{document}
 
-\setMemoto{S. Person}
+\setMemoto{ L. Guy, E. Bellm, P. Marshall}
         
 \mkmemotitle
 
-This memo describes the agreement between Rubin/LSST and NOIRLab for the ANTARES broker to provide the LSST Alert Filtering Service.
+During steady-state operations, Rubin Observatory's LSST will produce about ten million world public alerts of transients, variable, and moving objects. Science users will work with community alert
+brokers to crossmatch, filter, and classify these alerts in order to identify the subset that require real-time followup observations. 
+At the time the vision for this ambitious and comprehensive alert system was developed, no community alert brokers were functional.
 
-Technote \citeds{dmtn-226} proposes a partnership with the ANTARES alert broker \citep{2021AJ....161..107M}, one of the seven approved full-stream brokers to provide the Rubin AFS.
-Like the Rubin Operations project, ANTARES operates as part of NOIRLab.
+Accordingly, the Rubin project provided a fallback: a simple “alert filtering system” that the project would provide. 
+The AFS would allow Rubin data-rights holders to apply simple user-defined or predefined filters to the Rubin alert stream. 
+This minimized the risk that community alert brokers would not be available, or not provide the functionality required to fulfill users' needs.
+
+Today, the situation is quite different. 
+Seven community alert brokers have been approved for direct access to the full Rubin alert stream, with two more planning to operate downstream of a full-stream broker. 
+The brokers have mature systems and active user bases and are operating on live Zwicky Transient Facility alerts. 
+Several brokers have functionality which mirrors that planned for the Rubin AFS. 
+Nevertheless it is reasonable for the Rubin project to ensure that Rubin data-rights holders have access to AFS-like capabilities throughout the survey, even if that service is provided by another entity.
+
+Therefore Rubin Observatory commits to provide resources to enable the use of the Arizona-NOIRLab Temporal Analysis and Response to Events System (ANTARES),   \citep{2021AJ....161..107M} AFS for Rubin. 
+Rubin will work with CSDC to develop a detailed plan to commission the AFS following the technical description given in the  technical note \citeds{dmtn-226} 
+It is expected the AFS will be commissioned along with the rest of the Rubin system. 
+As such, the AFS should be in place no later than October 1, 2025.
 
 \clearpage
 \appendix
@@ -40,6 +53,7 @@ Like the Rubin Operations project, ANTARES operates as part of NOIRLab.
 \input{acronyms.tex}
 % If you want glossary uncomment below -- comment out the two lines above
 %\printglossaries
+
 
 
 
